@@ -1,5 +1,5 @@
 provider "google" {
-  credentials         = "${file(/root/keys/k8-cluster3-ece12d4803cf.json)}"
+  credentials         = "${file("/root/keys/k8-cluster3-ece12d4803cf.json")}"
   project             = "${var.project}"
   region              = "${var.region}"
   zone                = "${var.zone}"
@@ -9,7 +9,7 @@ resource "google_compute_instance" "vm_instance" {
   machine_type        = "${var.machine_type}"
 
 
-  count               = "${var.count}"
+  # count               = "${var.count}"
   # name  = "${var.name_prefix}-${count.index}"
 
 

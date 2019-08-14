@@ -2,9 +2,9 @@ variable "instance_name" {
   default = "bastion-tf"
 }
 
-variable "count" {
-  default = "1"
-}
+# variable "count" {
+#   default = "1"
+# }
 
 variable "project" {
   default = "k8-cluster3"
